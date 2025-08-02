@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieBuddy - Discover Films</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>MovieBuddy</h1>
+      <p>Discover your next favorite film</p>
+    </header>
+    
+    <section id="input-section">
+      <div id="search-container">
+        <input 
+          type="text" 
+          id="movieName" 
+          placeholder="Search for movies..." 
+          aria-label="Search for movies"
+        />
+        <button onclick="searchMovies()" id="search">Search</button>
+      </div>
+      <div id="row2">
+        <div onclick="fetchTopratedMovies()" class="btn" tabindex="0" role="button">Top Rated Movies</div>
+        <div onclick="fetchPopularMovies()" class="btn" tabindex="0" role="button">Popular Movies</div>
+          <div onclick="fetchGenre()" class="btn" tabindex="0" role="button">genres</div>
+       <div id='genreContainer'>
+
+       
+
+         
+       </div>
+      </div>
+    </section>
+
+    <section id="displayer">
+      <!-- Loading state initially hidden -->
+      <div id="loading" class="loading none">
+        <div class="spinner"></div>
+      </div>
+      <!-- Movie list will be inserted here -->
+    </section>
+
+    <section id="controls" class="none">
+      <button onclick="prevPage()" class="btn">Previous Page</button>
+      <button onclick="nextPage()" class="btn">Next Page</button>
+
+    </section>
+
+    <script src="script.js">
+     
+    </script>
+  </body>
 </html>
