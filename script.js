@@ -14,11 +14,10 @@ let currentId = null;
 let isGenreListVisible = false;
 let genresLoaded = false;
 
-// Initialize the app
+
 document.addEventListener('DOMContentLoaded', () => {
   fetchPopularMovies();
   
-  // Add keyboard support for search
   document.getElementById('movieName').addEventListener('keypress', (e) => {
     if (e.key === 'Enter') searchMovies();
   });
@@ -32,6 +31,7 @@ async function genreFetchMovies(id) {
  
   await fetchMovies();
   toggleGenreListVisibility();
+
 }
 
 async function fetchPopularMovies() {
@@ -163,8 +163,15 @@ function setupItemClickHandlers() {
 }
 
 async function fetchGenre() {
+
+   const cBtn = document.getElementById('controls')
+        cBtn.classList.add("none");
+    cBtn.classList.remove("controls");
+ 
   if (genresLoaded) {
     toggleGenreListVisibility();
+    displayer.textContent = '';
+    
     return;
   }
 

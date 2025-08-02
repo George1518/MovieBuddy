@@ -201,11 +201,12 @@
       }
 
       /* Controls */
-      #controls {
+      .controls {
         display: flex;
         justify-content: center;
         gap: 1rem;
         margin: 2rem 0;
+     
       }
 
       /* Loading State */
@@ -292,4 +293,9 @@
       }
 
      
+      .none
+      {
+        display: none;
+      }
+
       
