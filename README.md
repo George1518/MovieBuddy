@@ -3,7 +3,7 @@
 MovieBuddy is a **responsive movie explorer app** built using **HTML, CSS, JavaScript, and the TMDb API**.  
 It allows users to browse popular and top-rated movies, search by title, and filter movies by genre — all in a smooth, interactive UI.  
 
-👉 [**Click here to visit MovieBuddy**](https://your-deployment-link.com)  
+👉 [**Click here to visit MovieBuddy**](https://george1518.github.io/MovieBuddy/)  
 
 ---
 
